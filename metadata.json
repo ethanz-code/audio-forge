@@ -1,0 +1,5 @@
+{
+  "name": "AudioForge",
+  "description": "A professional audio processing suite featuring smart silence detection splitting and precise multi-track timeline assembly with Google Material Design aesthetics.",
+  "requestFramePermissions": []
+}

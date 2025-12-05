@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AudioForge - The Audio Bakery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Patrick Hand"', 'cursive'],
+              display: ['"Fredoka"', 'sans-serif'],
+            },
+            colors: {
+              primary: '#d35400', // Burnt orange
+              'primary-hover': '#e67e22',
+              secondary: '#f1c40f', // Dough yellow
+              accent: '#e74c3c', // Cherry red
+              surface: '#fffbf0', // Cream paper
+              'surface-highlight': '#ffffff',
+              background: '#fcf3cf', // Light yellow/beige bg
+              outline: '#8d6e63', // Brown pencil
+              text: '#5d4037', // Dark brown text
+            },
+            boxShadow: {
+              'sketch': '2px 2px 0px 0px #5d4037',
+              'sketch-hover': '4px 4px 0px 0px #5d4037',
+              'sketch-lg': '6px 6px 0px 0px #5d4037',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #fcf3cf;
+        background-image: radial-gradient(#d7ccc8 1px, transparent 1px);
+        background-size: 20px 20px;
+        color: #5d4037;
+      }
+      
+      .paper-card {
+        background-color: #fffbf0;
+        border: 2px solid #5d4037;
+        border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        box-shadow: 2px 3px 0px #5d4037;
+      }
+
+      .btn-sketch {
+        border: 2px solid #5d4037;
+        border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      .btn-sketch:hover:not(:disabled) {
+        transform: translate(-2px, -2px);
+        box-shadow: 4px 4px 0px #5d4037;
+      }
+
+      .btn-sketch:active:not(:disabled) {
+        transform: translate(0px, 0px);
+        box-shadow: 0px 0px 0px #5d4037;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d7ccc8;
+        border: 2px solid #fcf3cf;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a1887f;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "jszip": "https://esm.sh/jszip@3.10.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
